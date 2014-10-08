@@ -1,3 +1,7 @@
+<div class="jumbotron">
+  <h1>HandCrafted items from <br> around the world</h1>
+  <h2>Discover ome-of-a-kind items</h2>
+</div>
 <div class="center">
   <div class="row">
     <% @listings.each do |listing| %>
@@ -8,7 +12,7 @@
           <h3><%= listing.name %></h3> 
           <p> <%= number_to_currency(listing.price) %></p>
           <p> <%= "sold by #{listing.user.name}" %> </p>
-        
+          
 
         </div>
       </div>
